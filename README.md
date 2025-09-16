@@ -26,3 +26,22 @@ def factorial(n):
     return result
 
 print(factorial(5))  # Expected 120
+
+
+SQL Injection Vulnerability
+
+Scenario:
+
+This code builds a SQL query unsafely.
+Prompt Copilot to refactor using parameterized queries to prevent SQL injection.
+
+import sqlite3
+
+def get_user_data(username):
+    conn = sqlite3.connect("users.db")
+    cur = conn.cursor()
+    query = f"SELECT * FROM users WHERE username='{username}'"  # Vulnerable
+    cur.execute(query)
+    return cur.fetchall()
+
+print(get_user_data("admin' OR '1'='1"))
