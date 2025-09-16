@@ -45,3 +45,37 @@ def get_user_data(username):
     return cur.fetchall()
 
 print(get_user_data("admin' OR '1'='1"))
+
+
+****  Use Copilot Agent to create a Flask app with a single route /hello that returns “Hello DevCon” as plain text.
+
+****
+Broken API Call (JavaScript)
+
+fetch('/data')
+.then(response => response.json)
+.then(data => console.log(data));
+
+
+Challenge: Fix the bug so response.json() is called properly.
+
+****
+Challenge:
+Generate a simple landing page for “DevCon Tech Event” with:
+
+A hero section (big title + “Register” button)
+
+An agenda section listing 3 sessions
+
+A footer with links to Twitter & LinkedIn
+
+****
+
+Selenium Test for a Login Page
+Challenge: Ask Copilot Agent to create a Selenium script that:
+
+Opens https://example.com/login
+
+Enters username and password
+
+Clicks “Login” and verifies page title changes
